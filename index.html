@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <input id="pass" type="password">
+        <button id="show">🔆</button>
+    </div>
+
+    <!-- 🌑🌕☀🌙☀🔓🔒 -->
+
+
+    <script>
+        let pass = document.getElementById("pass")
+        let btn = document.getElementById("show")
+
+        btn.addEventListener("click", (e) => {
+            if (pass.type == "password") {
+                pass.type = "text"
+                btn.innerText = "☀"
+            } else {
+                btn.innerText = "🔆"
+                pass.type = "password"
+            }
+        })
+    </script>
+</body>
+
+</html>
